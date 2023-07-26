@@ -3,6 +3,7 @@ import Person from './components/component.person';
 import Products from './components/component.products';
 import ProductArea from './components/component.productArea';
 import './App.css';
+import IncDec from './components/component.inc_dec';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Person name="Md Shajib" profession="Student"></Person>
         <Person></Person>
         <ProductArea></ProductArea>
-
+        <IncDec></IncDec>
       </header>
     </div>
   );

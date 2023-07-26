@@ -15,18 +15,21 @@ function ProductArea(){
         {name: 'AdobeReader', price: '$9.00'},
         {name: 'Canva', price: '$5.00'}
       ];
-    const StileContainer = {
+    const StyleContainer = {
         maxWidth: '100%',
         padding: '20px',
         margin: '10px',
         display: 'flex',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
     }
     return(
-        <div style={StileContainer}>
+        <div style={StyleContainer}>
         <Products product={ProductList[0]}></Products>
         <Products product={ProductList[1]}></Products>
         <Products product={ProductList[2]}></Products>
+        <br></br>
         {
             FriendsList.map(friends => <Friends Friend={friends}></Friends>)
         }
