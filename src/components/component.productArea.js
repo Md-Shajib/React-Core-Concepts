@@ -31,7 +31,7 @@ function ProductArea(){
         <Products product={ProductList[2]}></Products>
         <br></br>
         {
-            FriendsList.map(friends => <Friends Friend={friends}></Friends>)
+            FriendsList.map(friend => <Friends Friend={friend}></Friends>)
         }
         </div>
     );
